@@ -1,0 +1,90 @@
+<ion-content class="background">
+  <!-- Header Part -->
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title color="dark"> Free web site</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- <div class="ion-padding">
+      <ion-input id="user-name" placeholder="Enter your name" style="background-color: white; color: black;" ></ion-input>
+      <ion-button id="btn" expand="block">Save Your Name</ion-button>
+    </div> -->
+
+  <!-- Login Form -->
+  <div id="container" style="align-items: center; justify-content: center; height: 60%">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/images/lock.jpg" height="200px" style="text-align: center;">
+      </ion-card-header>
+
+      <ion-input type="password" placeholder="Enter your password" id="user-input"></ion-input>
+      <ion-button color="danger" expand="block" size="large" id="set-btn">
+        <ion-icon icon="key" slot="start"></ion-icon>
+        Set Your Password
+      </ion-button>
+      <ion-button color="success" expand="block" size="large" style="display: none;" id="access-btn">
+        <ion-icon icon="key" slot="start"></ion-icon>
+        <label> Access Password</label>
+      </ion-button>
+
+      <small id="password-empty-notice" style="color: white; display: none;" size="large">Your Password is empty
+        !</small>
+
+      <small id="password-wrong" style="color: white; display: none;" size="large">wrong Password !</small>
+    </ion-card>
+  </div>
+
+
+  <!-- register form / contact form -->
+  <div id="app-page" style="display: none;" class="">
+    <h1>user contact !</h1>
+
+
+    <!-- <ion-item>
+            <ion-button slot="end" color="success" style="width: 30px;height: 30px;  " shape="round"href="tel:0123456789" color="success">
+                <ion-icon name="call" ></ion-icon>
+            </ion-button>
+            <ion-label>
+              <h3>Mr.ram</h3>
+              <p>0123456789</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>-->
+
+
+    <ion-card size="small" style="display: none; " id="contact-form">
+      <ion-card-header>
+        <img src="assets/images/a1.jpg">
+      </ion-card-header>
+      <ion-input type="text" placeholder="Your Name" style="border-bottom:0.5px solid #ccc;" class="ion-margin-bottom"
+        id="contact-name"></ion-input>
+
+      <ion-input type="number" placeholder=" Your phone number" style="border-bottom:0.5px solid #ccc;"
+        id="contact-phone"></ion-input>
+      <ion-input type="text" placeholder=" Your Address" style="border-bottom:0.5px solid #ccc; "
+        id="contact-address"></ion-input>
+      <ion-input type="email" placeholder=" Your Email" style="border-bottom:0.5px solid #ccc;"
+        id="contact-email"></ion-input>
+      <ion-input type="date" placeholder=" Your Date of Birth" style="border-bottom:0.5px solid #ccc;"
+        id="contact-dob"></ion-input>
+    </ion-card>
+
+
+    <!-- add button -->
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="add-btn">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+
+    <!-- save button -->
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="save-btn" style="display: none;">
+      <ion-fab-button color="danger">
+        <ion-icon name="Save"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </div>
+
+</ion-content>
